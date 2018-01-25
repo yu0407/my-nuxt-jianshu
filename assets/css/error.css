@@ -1,0 +1,76 @@
+/*这是错误页面CSS样式*/
+.error{
+	height: 974px;
+	/*background: url(../img/bg1.jpg);*/
+	background-size:100% 100%;
+}
+.error-logo{
+	position: absolute;
+	left: 40px;
+	top: 40px;
+}
+.error-logo a img{
+	width: 300px;
+}
+.error-wrap .error-content{
+	text-align: center;
+	padding: 80px 0 20px;
+}
+.error-wrap .error-content img{
+	width: 220px;
+}
+.error-wrap .error-content h3{
+	margin: 40px 0 20px;
+}
+.error-wrap .error-content p{
+	font-size: 14px;
+	margin: 10px 0 30px;
+}
+.error-wrap .error-content a{
+	background: rgb(66,192,46);
+	color: white !important;
+	display: block;
+	width: 160px;
+	border-radius: 40px;
+	border-color: #42c02e;
+	margin: 0 auto;
+	cursor: pointer;
+	border: solid 1px transparent;
+	padding: 13px 0;
+	font-size: 15px;
+}
+@media (max-width:768px){
+	.error-logo{
+		display: none;
+	}
+	
+	
+}
+
+/*.error h1{
+	color:white;
+	opacity: .7;
+	font-size: 400px;
+	position: absolute;
+	top: 300px;
+	left: 200px;
+	transform: rotateZ(-18deg);
+}
+.error h2{
+	color:white;
+	opacity: .8;
+	font-size: 280px;
+	position: absolute;
+	top: 320px;
+	left: 450px;
+	transform: rotateZ(-18deg);
+}
+.error h3{
+	color:white;
+	font-size: 180px;
+	position: absolute;
+	top: 340px;
+	left: 650px;
+	transform: rotateZ(-18deg);
+}*/
+

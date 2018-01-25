@@ -8,42 +8,46 @@
      </nuxt-link>
     </div>
 
-    <!--登录表单-->
-   <div class="main">
-      <div class="title">
-        <h4>
-        <nuxt-link to="/signIn" class="active"> 登录 </nuxt-link>
-         <b>·</b>
-        <nuxt-link to="/signUp"> 注册 </nuxt-link>
-        </h4>
-      </div>
-       <div class="js-form">
-         <form  method="post">
-          <div class="input-prepend">
-            <input type="text" value="" name="" placeholder="手机号或邮箱" class="top-radius">
-           <i class="fa fa-user"></i>
-          </div>
-          <div class="input-prepend">
-           <input type="password" value="" name="" placeholder="密码" class="bottom-radius">
-           <i class="fa fa-lock"></i>
-          </div>
-            <div class="remember">
-                <input type="checkbox">&nbsp;
-                <span>记住我</span>
-            </div>
-             <div class="help">
-                <nuxt-link to="/help">登录遇到问题?</nuxt-link>
-             </div>
-             <input type="button" class="btn btn-primary sign-in-btn" value="登录">
-         </form>
-         <div class="more-sign">
-         		<p>社交账号登录</p>
+    <!--注册表单-->
+  	<div class="main">
+	  	<div class="title">
+	        <h4>
+                <nuxt-link to="/signIn" > 登录 </nuxt-link>
+                 <b>·</b>
+                <nuxt-link to="/signUp" class="active"> 注册 </nuxt-link>
+	        </h4>
+	    </div>
+  		<div class="js-sign-up">
+  			<form method="post">
+  				<div class="input-prepend">
+  					<input type="text" name="" id="" value=""placeholder="你的昵称" class="top-radius" />
+  					<i class="fa fa-user"></i>
+  				</div>
+  				<div class="input-prepend">
+  					<input type="text" name="" id="" value="" placeholder="手机号" />
+  					<i class="fa fa-phone"></i>
+  				</div>
+  				<div class="input-prepend ssm">
+  					<input type="" name="" id="" value="" placeholder="请输入验证码" />
+  					<i class="fa fa-shield"></i>
+  					<a class="send-ssm btn btn-success" href="#">发送验证码</a>
+  				</div>
+  				<div class="input-prepend">
+  					<input type="password" name="" id="" value=""  class="bottom-radius" placeholder="设置密码"/>
+  					<i class="fa fa-lock"></i>
+  				</div>
+  				<input type="submit" value="注册" class="btn btn-success sign-up-btn"/>
+  				<p class="sign-up-msg">
+  					点击 “注册” 即表示您同意并愿意遵守简书<br>
+  					<a href="#">用户协议</a>
+  					和
+  					<a href="#">隐私政策</a>
+  				</p>
+  			</form>
+  		</div>
+  		 <div class="more-sign">
+         		<p>社交账号注册</p>
          		<ul>
-         			<li class="weibo">
-         				<a href="#">
-         					<i class="fa fa-weibo"></i>
-         				</a>
-         			</li>
          			<li class="weixin">
          				<a href="#">
          					<i class="fa fa-weixin"></i>
@@ -54,17 +58,14 @@
          					<i class="fa fa-qq"></i>
          				</a>
          			</li>
-         			<li class="another">
-         				<a href="#">
-         					其他
-         				</a>
-         			</li>
+         			
          		</ul>
          </div>
        </div>
+  		
+  	</div>
 
    </div>
-  </div>
 </template>
 <script>
 import '@/assets/css/sign.css'
@@ -81,15 +82,13 @@ export default {
  },
 }
 </script>
-
 <style scoped>
-
 .sign{
     /* 先写盒子模型 然后文本 定位放上面 */
     height: 100%;
     font-size: 14px;
     text-align: center;
-     background: #f1f1f1;
+    background: #f1f1f1;
 }
 /* logo */
 .logo{
@@ -289,6 +288,5 @@ export default {
 
 
 
+	
 </style>
-
-

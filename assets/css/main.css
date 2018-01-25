@@ -1,28 +1,34 @@
-html, body
-{
-  background-color: #fff;
-  color: #000;
-  letter-spacing: 0.5px;
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  height: 100vh;
-  margin: 0;
+*{
+	box-sizing: border-box;
 }
-
-footer
-{
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid #ddd;
+html,body{
+	height: 100%;
+	background: white;
+	color: #333333;
 }
-
-a, a:hover, a:focus, a:visited
-{
-  color: #000;
+#__nuxt{
+	height: 100%;
 }
-
-.logo {
-  width: 100%;
-  height: auto;
-  max-width: 400px;
-  max-height: 289px;
+#default_template{
+	height: 100%;
+	background: #FFFFFF;
+}
+#sign-template{
+	height: 100%;
+}
+input:focus{
+	border: none;
+}
+a,a:hover,a:focus,a:visited
+{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+ul,ol,dl{
+	list-style: none;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+img{
+	max-width: 100%;
 }

@@ -1,31 +1,22 @@
 <template>
-  <section class="container">
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
-      USERS
-    </h1>
-    <ul class="users">
-      <li v-for="(user, index) in users" :key="index" class="user">
-        <nuxt-link :to="{ name: 'id', params: { id: index }}">
-          {{ user.name }}
-        </nuxt-link>
-      </li>
-    </ul>
-  </section>
+  <div>
+  		<my-header></my-header>
+  		<div>
+  			按时到敬爱回家圣诞节啊
+  		</div>
+  </div>
 </template>
 
 <script>
-import axios from '~/plugins/axios'
-
+import MyHeader from '@/components/MyHeader'
 export default {
-  async asyncData () {
-    let { data } = await axios.get('/api/users')
-    return { users: data }
-  },
   head () {
     return {
-      title: 'Users'
+      title: '简书-创作你的创作'
     }
+  },
+  components:{
+  	MyHeader
   }
 }
 </script>
