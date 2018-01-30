@@ -1,3 +1,5 @@
+/************************************************************************ 我是华丽的分割线   ******************************************************************************/
+/* 公共样式 */
 *{
 	box-sizing: border-box;
 }
@@ -8,10 +10,12 @@ html,body{
 }
 #__nuxt{
 	height: 100%;
+	
 }
 #default_template{
 	height: 100%;
 	background: #FFFFFF;
+	padding-top: 56px;
 }
 #sign-template{
 	height: 100%;
@@ -19,12 +23,12 @@ html,body{
 input:focus{
 	border: none;
 }
-a,a:hover,a:focus,a:visited
+a,a:hover,a:focus
 {
   color: inherit !important;
   text-decoration: none !important;
 }
-ul,ol,dl{
+ul,dl{
 	list-style: none;
 	padding: 0 !important;
 	margin: 0 !important;
@@ -32,3 +36,396 @@ ul,ol,dl{
 img{
 	max-width: 100%;
 }
+.my_container {
+	width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+@media (min-width: 992px){
+    .my_container {
+       	width:960px !important;
+    }
+}
+@media (max-width: 1080px){
+    .my_container {
+        width:750px !important;
+    }
+}
+
+
+/************************************************************************ 我是华丽的分割线   ******************************************************************************/
+/* 首页页面布局 */
+.index{
+	padding-top: 30px;
+}
+.index .main{
+	padding-right: 0;
+	overflow: hidden;
+}
+.index .main .banner{
+	margin-bottom: 35px;
+}
+.index .main .banner img{
+	width: 100%;
+	border-radius: 4px;
+}
+
+
+
+
+.index .main .recommend-collection{
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.index .main .recommend-collection a{
+	display: inline-block;
+	margin: 0 18px 18px 0;
+	border-radius: 6px;
+	background: #f7f7f7;
+	border: solid 1px #dcdcdc;
+	min-height: 32px;
+	overflow: hidden;
+}
+.index .main .recommend-collection a img{
+	height: 32px;
+	width: 32px;
+	vertical-align: bottom;
+}
+.index .main .recommend-collection a span{
+	display:inline-block;
+	padding: 0 10px;
+	line-height: 32px;
+	font-size: 14px;
+}
+.index .main .recommend-collection .more_hot_collection{
+	display: inline-block;
+	color: #979797 !important;
+	font-size: 14px;
+	margin: 0;
+	margin-top: 7px;
+	border: none;
+	background: none;
+}
+.index .main .split_line{
+	margin: -5px 0 15px;
+	border: solid 1px #f0f0f0;
+}
+
+
+
+
+.index .aside{
+	padding: 0 0 0 4.166667%;
+}
+.index .aside .board{
+	margin-top: -4px;
+	margin-bottom: 4px;
+}
+.index .aside .board a{
+	display: block;
+}
+.index .aside .board img{
+	width: 100%;
+	border-radius: 4px;
+	margin-bottom: 6px;
+}
+
+.index .aside .download{
+	display: block;
+	width: 100%;
+	min-height:60px;
+	border: solid 1px #CCCCCC;
+	margin-bottom: 30px;
+	padding: 10px 22px;
+	border-radius:6px;
+	position: relative;
+}
+.index .aside .download img{
+	width: 60px;
+	height: 60px;
+}
+.index .aside .download .title{
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 7px;
+}
+.index .aside .download .title p{
+	margin: 0;
+	font-size: 15px;
+}
+.index .aside .download .title p i{
+	font-weight: 800;
+}
+.index .aside .download .title p:last-of-type{
+	font-size: 13px;
+	color: rgb(153,153,153);
+	margin-top: 4px;
+}
+.index .aside .download .showQrcode{
+	position: absolute;
+	z-index: 999;
+	left: 45px;
+	top: -190px;
+	width: 180px;
+	height: 180px;
+	border: solid 1px black;
+	background: white;
+	padding: 10px;
+	box-shadow:  0 0 10px rgba(0,0,0,.5);
+	border-radius: 10px;
+	transition: linear .2s;
+}
+.index .aside .download .showQrcode:before{
+		content: '';
+		bottom: -8px;
+		left: 80px;
+		width: 15px;
+		height: 15px;
+		z-index: 9999;
+		position: absolute;
+		background: white;
+		transform: rotate(45deg);
+		border-right:solid 1px #CCCCCC;
+		border-bottom:solid 1px #CCCCCC;
+}
+.index .aside .download .showQrcode img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+.note_list{
+	border: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.note_list li{
+	position: relative;
+	width: 100%;
+	padding: 0 0 17px 0;
+	margin: 0 0 17px 0;
+	border-bottom: 1px solid #CCCCCC;
+	word-wrap: break-word;  /*自动换行*/
+}
+.note_list li.have_img>a{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 150px;
+	height: 120px;
+	margin-top: -60px;	
+}
+.note_list li.have_img>a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	border: 1px solid #F0F0F0;
+}
+
+.note_list li.have_img .content{
+	padding-right:160px;
+}
+.note_list .author{
+	margin-bottom: 14px;
+	font-size: 13px;
+}
+.note_list .author .avatar,.note_list .author .info{
+	display: inline-block;
+	vertical-align: middle;
+}
+.avatar{
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+.avatar img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50% !important;
+	border: solid 1px #CCCCCC;
+}
+.note_list .author .avatar{
+	margin: 0 10px 0 0;
+}
+.note_list .author .info .time{
+	color: #969696;
+	padding-left: 5px;
+}
+.note_list .title{
+	font-size: 18px;
+	font-weight: 800;
+	margin-bottom: 7px;
+}
+.note_list .title:visited{
+	color: #969696;
+}
+.note_list .abstract{
+	font-size: 13px;
+	margin: 0 0 13px 0;
+	line-height: 24px;
+}
+.note_list .meta{
+	font-size: 12px;
+	line-height: ;
+	font-weight: 400;
+	
+}
+.note_list .meta .collection_tag{
+	display: inline-block;
+	color: #EA6F5A !important;
+	border: solid 1px #EA6F5A;
+	padding: 0 5px;
+	border-radius: 4px;
+	margin-right: 10px;
+	transform: all ease-in .5s;
+	max-width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+}
+.note_list .meta .collection_tag:hover{
+	background: rgb(254,247,246);
+	border: 1px solid rgb(236,97,93); 
+}
+.note_list .meta .tag{
+	margin-right: 10px;
+	color: #b4b4b4 !important;
+	transition: .3s;
+}
+.note_list .meta .tag:hover{
+	color: rgb(120,120,120) !important;
+}
+.note_list .meta span{
+	color: #B4B4B4;
+}
+
+@media (max-width:1080px ) {
+	.note_list li.have_img > a{
+		margin-top: -58px;
+		bottom: 40px;
+		width: 125px;
+		height: 100px;
+	}
+	.note_list li.have_img>div{
+		padding-right: 135px;
+	}
+}
+.index .main .load-more{
+	display: block;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	background: #a5a5a5;
+	border-radius: 40px;
+	margin: 30px auto 60px;
+	padding: 10px 15px;
+	font-size: 15px;
+	color: white !important;
+}
+footer{
+	margin-bottom: 20px;
+}
+.my_container .footer_list li{
+	display: inline-block;
+	
+}
+.my_container .footer_list li a{
+	color: #969696 !important;
+	font-size: 13px;
+}
+
+.recommend-author{
+	margin-bottom: 10px;
+	font-size: 12px;
+	text-align: center;
+}
+.recommend-author .title{
+	text-align: left;
+}
+.recommend-author .title .page-change{
+	float: right;
+	color: #969696;
+}
+.recommend-author .title .page-change i{
+	transition:all .5s;
+}
+.recommend-author .list{
+	margin-bottom: 20px;
+	text-align: left;
+}
+.recommend-author .list li{
+	margin-top: 15px;
+	overflow: hidden;
+}
+.recommend-author .list li .avatar{
+	float: left;
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
+}
+.recommend-author .list li .follow{
+	float: right;
+	font-size: 13px;
+	color: #42C02E !important;
+}
+.recommend-author .list li .name{
+	padding-top: 5px;
+	margin-right: 60px;
+	font-size: 14px;
+}
+.recommend-author .list li p{
+	color: #969696;
+	font-size: 12px;
+}
+.recommend-author .find-more{
+	display: block;
+	width: 100%;
+	padding: 7px 7px 7px 12px;
+	color: #787878 !important;
+	border: solid 1px #CCCCCC;
+	font-size: 13px;
+	border-radius: 10px;
+	background: #F7F7F7;
+}
+.recommend-author .find-more i{
+	margin-left: 5px;
+	font-weight: 800;
+}
+
+
+
+
+
+
+
+/************************************************************************ 我是华丽的分割线   ******************************************************************************/
+/* 文章页面布局 */
+
+
+
+
+
+
+
+
+/************************************************************************ 我是华丽的分割线   ******************************************************************************/
+/*用户页面*/
+
+
+
+
+
+
+
+
+
+
+

@@ -68,6 +68,7 @@
 									<span>关注</span>
 								</nuxt-link>
 							</li>
+							
 							<li class="notify"  @mouseover='msgShow=true' @mouseleave="msgShow = false">
 								<nuxt-link to='/'>
 									<i class="fa fa-bell"></i>
@@ -116,6 +117,7 @@
 								
 							</li>
 							<!-- 头部导航搜索框 -->
+							
 							<li class="search search_wrap_active">
 								<form method="post">
 									<transition>
@@ -173,16 +175,12 @@
 		width: 100%;
 		padding: 0 !important;
 		border-bottom: solid 1px #f0f0f0;
-	}
-	nav .navbar{
-		margin-bottom: 20px;
-		background: #FFFFFF;
-	}
-	nav .nav-fixed-top{
 		position: fixed;
 		left: 0;
 		top: 0;
 		z-index: 9999;
+		background: #FFFFFF;
+		margin-bottom: 20px;
 	}
 	nav .nav-width-limit{
 		width: 1440px;
@@ -266,8 +264,10 @@
 		border: solid 1px #ccc;
 	}
 	nav .nav-user .nav-drop-menu{
+		background: white;
 		left: 0;
 		position: absolute;
+		z-index: 9999;
 		min-width: 160px;
 		font-size: 15px;
 		box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -287,8 +287,7 @@
 		margin-right: 15px;
 		color: #EA6F5A;
 		font-size: 18px;
-	}
-	
+	}	
 	nav .nav-list{
 		padding: 0 !important;
 		margin: 0 !important;
@@ -313,7 +312,7 @@
 	nav .nav-list > li.active > a{
 		display: block;
 		height: 55px;
-		padding: 15px;
+		padding: 15px 15px 15px 0;
 		font-size: 17px;
 		color: #EA6F5A !important;
 		
@@ -351,6 +350,7 @@
 		position: relative;
 	}
 	nav .nav-list .notify .nav-drop-menu{
+		background: white;
 		position: absolute;
 		top: 56px;
 		left: 0;
@@ -376,9 +376,7 @@
 		font-size: 18px;
 		margin-left: 10px;
 	}
-
-
-	
+	/*头部导航搜索框*/
 	nav .nav-list .search{
 		padding-left: 15px;
 		background: white !important;
@@ -419,10 +417,7 @@
 		background: #969696;
 		color: white !important;
 	}
-	
-	
-	
-
+	/* 搜索框下放文字 */
 	nav .nav-list .search_history:before{
 		content: '';
 		top: -5px;
@@ -439,6 +434,7 @@
 		left: 0;
 		top: 100%;
 		width: 250px;
+		z-index: 9999;
 		margin-top:9px;
 		position: absolute;
 		background: white;

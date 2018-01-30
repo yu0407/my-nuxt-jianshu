@@ -5,16 +5,16 @@
     text-align: center;
 }
 /* logo */
-.logo{
+.sign .logo{
     position: absolute;
     top: 55px;
     left: 50px;
 }
-.logo img{
+.sign .logo img{
     width: 100px;
 }
 /* 登录盒子 */
-.main{
+.sign .main{
     width: 400px;
     /*height: 500px;*/
     margin: 60px auto 0;
@@ -25,39 +25,39 @@
     display: inline-block;
 }
 
-.main .title{
+.sign .main .title{
     margin: 0 auto 50px;
     padding: 10px;
     color: #939393;
    
 }
-.main .title h4{
+.sign .main .title h4{
     margin:0;
     font-size: 18px;
 }
-.main .title h4 a,
+.sign .main .title h4 a,
 .main .title h4 b{
     padding: 10px;
 }
-.main .title h4 a.active{
+.sign .main .title h4 a.active{
     font-weight: 700;
     color: #ea6f5a !important;
     border-bottom:2px solid #ea6f5a;
 }
-.main  .title h4 a:hover{
+.sign .main  .title h4 a:hover{
     border-bottom:2px solid #ea6f5a;
 }
 
 /* form */
-.main form{
+.sign .main form{
     margin: 0 0 30px;
     color: rgb(120,120,120);
 }
-.main form .input-prepend{
+.sign .main form .input-prepend{
     position: relative;
     width: 100%;
 }
-.main form .input-prepend input{
+.sign .main form .input-prepend input{
     width: 100%;
     height: 50px;
     padding: 4px 12px 4px 35px;
@@ -65,14 +65,14 @@
     border-bottom: none;
     background-color: rgb(248,248,248);
 }
-.main .top-radius{
+.sign .main .top-radius{
 	border-radius: 4px 4px 0 0;
 }
-.main form input.bottom-radius{
+.sign .main form input.bottom-radius{
 	border-bottom: solid 1px #C8C8C8;
 	border-radius: 0 0 4px 4px ;
 }
-.main form .input-prepend i{
+.sign .main form .input-prepend i{
     position: absolute;
     color:#969696;
     top:16px;
@@ -80,61 +80,60 @@
     font-size:20px;
 }
 
-.main form .remember{
+.sign .main form .remember{
 	float: left;
 	margin: 25px 0;
 }
 
-.main form .help{
+.sign .main form .help{
 	float: right;
 	margin: 25px 0;
 }
-.main form > input{
+.sign .main form > input{
 	width: 100%;
 	display: block;
 	border-radius: 5px;
 }
-.main .more-sign p{
+.sign .main .more-sign p{
 	position: relative;
 	font-size: 14px;
 	color: #b8b8b8;
 	margin-bottom: 20px;
 }
-.main .more-sign p:before,.main .more-sign p:after{
+.sign .main .more-sign p:before,.main .more-sign p:after{
 	content: '';
 	width: 60px;
 	border-bottom: solid 1px #B8B8B8;
 	position: absolute;
 	top: 10px;
 }
-.main .more-sign p:after{
+.sign .main .more-sign p:after{
 	right: 30px;
 }
-.main .more-sign p:before{
+.sign .main .more-sign p:before{
 	left: 30px;
 }
-
-.main .more-sign ul{
+.sign  .main .more-sign ul{
 	margin-bottom: 20px;
 }
-.main .more-sign ul li{
+.sign .main .more-sign ul li{
 	display: inline-block;
 	margin: 0 3px;
 }
-.main .more-sign ul li.weibo a{
+.sign .main .more-sign ul li.weibo a{
 	background: rgb(224,82,68);
 }
-.main .more-sign ul li.weixin a{
+.sign .main .more-sign ul li.weixin a{
 	background: rgb(0,187,41);
 }
-.main .more-sign ul li.qq a{
+.sign .main .more-sign ul li.qq a{
 	background:rgb(73,138,213);
 }
-.main .more-sign ul li.another a{
+.sign .main .more-sign ul li.another a{
 	background: rgb(240,240,240);
 	color: rgb(120,120,120) !important;
 }
-.main .more-sign ul li a{
+.sign .main .more-sign ul li a{
 	width: 50px;
 	height: 50px;
 	display: block;
@@ -142,29 +141,29 @@
 	line-height: 50px;
 	/*background: gray;*/
 }
-.main .more-sign ul li a i{
+.sign .main .more-sign ul li a i{
 	color: white;
 	font-size: 20px;
 }
 
-.sign-up-btn{
+.sign .sign-up-btn{
 	margin-top: 20px;
 }
-.sign-up-msg{
+.sign .sign-up-msg{
 	margin: 10px 0;
 	text-align: center;
 	font-size: 12px;
 	color: #969696;
 	line-height: 20px;
 }
-.sign-up-msg a{
+.sign .sign-up-msg a{
 	color: #3388ff !important;
 }
-.main form .ssm{
+.sign .main form .ssm{
 	position: relative;
 	display: none;
 }
-.main form .input-prepend a.send-ssm{
+.sign .main form .input-prepend a.send-ssm{
 	position: absolute;
 	width: 100px;
 	height: 36px;
@@ -178,13 +177,13 @@
 }
 
 @media (max-width:768px){
-	.logo{
+	.sign .logo{
 		display: none;
 	}
 	.sign{
 		background: #FFFFFF;
 	}
-	.main{
+	.sign .main{
 		box-shadow: none;
 		margin: 0 auto;
 	}
